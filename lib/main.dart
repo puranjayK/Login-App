@@ -80,7 +80,14 @@ class LandingPage extends StatelessWidget {
 
           return Scaffold(
             body: Center(
-              child: Text("Connecting to the app...."),
+              child: SizedBox(
+                      height: 50,
+                      width: 50,
+                      child: CircularProgressIndicator(
+                        value: null,
+                        strokeWidth:7.0,
+                      ),
+                    ),
             ),
           );
         },
